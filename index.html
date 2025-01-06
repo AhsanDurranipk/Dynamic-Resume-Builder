@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="/src/assets/styles/main.css">
+    <link rel="stylesheet" href="/src/assets/styles/themes.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <h1>Dynamic Resume Builder</h1>
+
+        <div class="form-container">
+            <h2>Fill out your details</h2>
+            <form id="resume-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="education">Education</label>
+                    <input type="text" id="education" name="education" required>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Work Experience</label>
+                    <input type="text" id="experience" name="experience" required>
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <input type="text" id="skills" name="skills" required>
+                </div>
+                <button type="submit">Generate Resume</button>
+            </form>
+        </div>
+
+        <div id="resume-preview" class="resume-container">
+            <h2>Resume Preview</h2>
+            <div class="resume-card">
+                <h3 id="resume-name">Name: </h3>
+                <p id="resume-email">Email: </p>
+                <p id="resume-education">Education: </p>
+                <p id="resume-experience">Work Experience: </p>
+                <p id="resume-skills">Skills: </p>
+            </div>
+        </div>
+
+        <div id="theme-selector">
+            <h3>Select Theme</h3>
+            <button id="light-theme" class="theme-button">Light Theme</button>
+            <button id="dark-theme" class="theme-button">Dark Theme</button>
+        </div>
+    </div>
+
+    <script src="src/app.ts"></script>
+</body>
+</html>

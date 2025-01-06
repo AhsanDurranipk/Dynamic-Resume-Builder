@@ -1,0 +1,17 @@
+{
+    "name": "dynamic-resume-builder",
+    "version": "1.0.0",
+    "description": "A dynamic resume builder where users can fill a form and generate their resume.",
+    "main": "dist/app.js",
+    "scripts": {
+      "start": "tsc && lite-server"
+    },
+    "dependencies": {
+      "jspdf": "^2.5.1"
+    },
+    "devDependencies": {
+      "typescript": "^4.4.3",
+      "lite-server": "^2.5.4"
+    }
+  }
+  
